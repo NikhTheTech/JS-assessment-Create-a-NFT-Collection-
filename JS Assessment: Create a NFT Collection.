@@ -1,0 +1,53 @@
+/*
+Assessment Requirements
+1. Create a variable that can hold a number of NFT's. What type of variable might this be?
+2. Create an object inside your mintNFT function that will hold the metadata for your NFTs. 
+   The metadata values will be passed to the function as parameters. When the NFT is ready, 
+   you will store it in the variable you created in step 1
+3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
+4. For good measure, getTotalSupply() should return the number of NFT's you have created
+*/
+
+// create a variable to hold your NFT's
+let nfts = [];
+// this function will take in some values as parameters, create an
+// NFT object using the parameters passed to it for its metadata, 
+// and store it in the variable above.
+function mintNFT(name, creator, imageURL, price, creation_year) {
+    const nft = {
+        "name": name,
+        "creator": creator,
+        "imageURL": imageURL,
+        "price": price,
+        "creation_year": creation_year
+    };
+    nfts.push(nft);
+    //Console.log("Minted:" +name);
+}
+
+// create a "loop" that will go through an "array" of NFT's
+// and print their metadata with console.log()
+function listNFTs() {
+        for(let i=0; i<nfts.length; i++) {
+            console.log("\nName: "+nfts[i].name);
+            console.log("Creator: "+nfts[i].creator);
+            console.log("Image URL: "+nfts[i].imageURL);
+            console.log("Price: "+nfts[i].price);
+            console.log("Creation Year: "+nfts[i].creation_year);
+    }
+}
+// print the total number of NFTs we have minted to the console
+function getTotalSupply() {
+    console.log("\nTotal Supply: "+nfts.length);
+}
+
+// call your functions below this line
+mintNFT("Sunset Overdrive", "Nikhil Chib", "https://example.com/sunset.jpg", 50000, 2021);
+mintNFT("Mountain View", "Ridhima Rajput", "https://example.com/mountain.jpg", 75000, 2020);
+mintNFT("City Lights", "Joelin J Jacob", "https://example.com/city.jpg", 10000000, 2019);
+mintNFT("Ocean Breeze", "DivyaPrakash", "https://example.com/ocean.jpg", 800000, 2022);
+mintNFT("Forest Whisper", "Eklavya Sharma", "https://example.com/forest.jpg", 65000, 2018);
+
+listNFTs();
+//console.log("\n");
+getTotalSupply();
