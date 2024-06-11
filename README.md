@@ -20,7 +20,7 @@ To run this project locally, you'll need Node.js installed on your machine. Once
    ```
 2. Navigate to the project directory:
    ```bash
-   cd JS Assessment: Create a NFT Collection.
+   cd "JS Assessment: Create a NFT Collection"
    ```
 
 ## Usage
