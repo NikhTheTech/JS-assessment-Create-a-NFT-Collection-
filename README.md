@@ -16,7 +16,7 @@ To run this project locally, you'll need Node.js installed on your machine. Once
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/nft-minting-management.git
+   git clone https://github.com/NikhTheTech/JS-assessment-Create-a-NFT-Collection-
    ```
 2. Navigate to the project directory:
    ```bash
